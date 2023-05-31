@@ -1,0 +1,31 @@
+.flight {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__title {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #a0b0b9;
+
+    @media (min-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  &__info {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 21px;
+    color: #4a4a4a;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}

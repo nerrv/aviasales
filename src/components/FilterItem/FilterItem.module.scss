@@ -1,0 +1,51 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+
+  &:last-child {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    background-color: #f1fcff;
+  }
+}
+
+.input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:checked + .box {
+    border-color: #2196f3;
+    background: url('../../assets/img/check.svg') no-repeat center;
+  }
+
+  &:focus + .box {
+    outline: 1px solid #2196f3;
+  }
+
+  &:disabled + .box {
+    opacity: 0.3;
+  }
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9abbce;
+  border-radius: 2px;
+}
+
+.info {
+  padding-left: 10px;
+}
