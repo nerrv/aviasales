@@ -35,7 +35,7 @@ const CardList = () => {
     ) : (
       <Alert
         style={{ padding: '20px', marginBottom: '20px' }}
-        message="По заданным параметрам билетов нет :("
+        message="Рейсов, подходящих под заданные фильтры, не найдено"
         type="info"
         showIcon
       />
